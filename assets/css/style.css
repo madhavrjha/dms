@@ -1,0 +1,210 @@
+/* Page CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --header-icon-height: 35px;
+}
+
+body {
+  background: #f7f8fc;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Side Menu */
+
+.aside {
+  background: #363740;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Side Menu Header */
+
+.aside header {
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.aside header a {
+  text-decoration: none;
+}
+
+.aside header img {
+  height: 26px;
+  display: inline-block;
+  margin-left: 23px;
+  margin-right: 9px;
+}
+
+.aside header span {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #a4a6b3;
+  opacity: 0.8;
+  letter-spacing: 0.4px;
+  position: relative;
+  top: -5px;
+}
+
+/* Top Nav */
+
+.aside .top-nav {
+  margin-top: 1rem;
+}
+
+/* Bottom Nav */
+
+.aside .bottom-nav {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+/* Side Nav */
+
+.aside nav {
+  width: 100%;
+}
+
+.aside nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.aside nav li {
+  padding: 0;
+  width: 100%;
+}
+
+.aside nav li a {
+  display: block;
+  padding: 13px 0;
+  padding-left: 23px;
+  width: 100%;
+  text-decoration: none;
+  color: #a4a6b3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0 2px;
+  border-left: 4px solid transparent;
+}
+
+.aside nav li a:hover {
+  background: rgba(0 0 0 / 20%);
+}
+
+.aside nav li.active a {
+  color: #dde2ff;
+  background: rgba(255 255 255 / 10%);
+  border-left: 4px solid #f7f8fcda;
+  box-shadow: 2px 2px 3px rgba(0 0 0 / 50%);
+}
+
+.aside nav li a i {
+  display: inline-block;
+  min-width: 23px;
+}
+
+/* Main Content */
+
+.main {
+  background: inherit;
+  padding: 2rem;
+  min-height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+/* Main Header */
+
+.main header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.main header .bars {
+  position: absolute;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background-color: #464649;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0 0 0 / 20%);
+  cursor: pointer;
+  display: none;
+}
+
+.main header .page-location {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #252733;
+}
+
+.main header img.logo {
+  display: inline-block;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.main header div {
+  display: flex;
+  align-items: center;
+}
+
+.main header div span {
+  margin-left: auto;
+  color: #c5c7cd;
+  padding-right: 10px;
+  border-right: 2px solid #c5c7cd;
+}
+
+.main header div p {
+  padding-left: 10px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #37383d;
+  text-align: right;
+}
+
+.main header div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+}

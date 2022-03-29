@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - District Manager</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.responsive.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+  <script src="../assets/js/dashboard.js" defer></script>
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- Aside -->
+    <aside class="aside">
+      <header>
+        <a href="#">
+          <img src="../assets/images/sms-icon.png" alt="sms-icon">
+          <span>NextSchool</span>
+        </a>
+      </header>
+
+      <nav class="top-nav">
+        <ul>
+          <li class="active"><a href="#"><i class="fa-solid fa-chart-pie"></i> <span>Dashboard</span></a></li>
+          <li><a href=""><i class="fa-solid fa-user-tie"></i> <span>Circuit Managers</span></a></li>
+          <li><a href=""><i class="fa-solid fa-newspaper"></i> <span>News</span></a></li>
+          <li><a href=""><i class="fa-solid fa-calendar-days"></i> <span>Events</span></a></li>
+          <li><a href=""><i class="fa-solid fa-school"></i> <span>Schools</span></a></li>
+          <li><a href=""><i class="fa-solid fa-comment-sms"></i> <span>Bulk SMS/Mail</span></a></li>
+        </ul>
+      </nav>
+      <nav class="bottom-nav">
+        <ul>
+          <li><a href=""><i class="fa-solid fa-gear"></i> <span>Settings</span></a></li>
+          <li><a href=""><i class="fa-solid fa-medal"></i> <span>Subscription</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header>
+        <span class="bars"><i class="fa-solid fa-bars"></i></span>
+        <p class="page-location">Dashboard | District Manager</p>
+        <img class="logo" src="../assets/images/sms-logo.png" alt="sms-logo">
+        <div class="profile-section">
+          <span><i class="fa-solid fa-bell"></i></span>
+          <p title="Herbert Spencer">Herbert Spencer</p>
+          <img src="../assets/images/user.png" alt="user">
+        </div>
+      </header>
+
+      <!-- Page Content -->
+
+      <!-- Cards -->
+      <div class="cards-container">
+        <div class="card">
+          <p>Circuit Managers</p>
+          <h2>60</h2>
+        </div>
+        <div class="card">
+          <p>Schools</p>
+          <h2>182</h2>
+        </div>
+        <div class="card">
+          <p>Principals</p>
+          <h2>434</h2>
+        </div>
+        <div class="card">
+          <p>Students</p>
+          <h2>72,895</h2>
+        </div>
+      </div>
+
+      <!-- Graphs & Statistics -->
+      <div class="performance">
+        <div class="graph-container">
+          <h2>District performance Report</h2>
+          <div class="flex">
+            <p>as of 25 Mar 2022, 04:43 PM</p>
+            <div class="flex">
+              <p class="active"><span><i class="fa-solid fa-minus"></i></span> Today</p>
+              <p><span><i class="fa-solid fa-minus"></i></span> Yesterday</p>
+            </div>
+          </div>
+          <div id="graph">
+            <p>
+              Here will be graph
+            </p>
+          </div>
+        </div>
+        <div class="statistics-container">
+          <div class="box">
+            <p>Total Staff Presents</p>
+            <h2>5934</h2>
+          </div>
+          <div class="box">
+            <p>Staff Absents</p>
+            <h2>618</h2>
+          </div>
+          <div class="box">
+            <p>Average meeting time</p>
+            <h2>33m</h2>
+          </div>
+          <div class="box">
+            <p>Average lecture time</p>
+            <h2>3h 8m</h2>
+          </div>
+          <div class="box">
+            <p>Total learner presents</p>
+            <h2>94%</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
