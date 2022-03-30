@@ -1,0 +1,184 @@
+.table-box {
+  margin: 1rem 0;
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfe0eb;
+}
+
+/* Table Title */
+
+.table-title {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table-title p {
+  font-weight: 700;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+
+.table-title button {
+  background-color: #454653;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 6px 20px;
+  border-radius: 17px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.table-title button:hover {
+  background-color: #363740;
+}
+
+.table-title div {
+  margin-left: auto;
+}
+
+.table-title .sort {
+  margin-right: 1rem;
+}
+
+.table-title :is(.sort, .filter) {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #4b506d;
+}
+
+.table-title :is(.sort, .filter) i {
+  margin-right: 5px;
+  color: #e5e5e5;
+}
+
+/* Table */
+
+table {
+  margin-top: 1rem;
+  width: 100%;
+  text-align-last: left;
+  border-spacing: 0;
+}
+
+/* Table Header */
+
+table th {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #9fa2b4;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #dfe0eb;
+}
+
+/* Table Body */
+
+td {
+  padding: 1.3rem 1rem;
+  border-bottom: 1px solid #dfe0eb;
+}
+
+tbody tr:hover {
+  background-color: #3752ff07;
+}
+
+tbody td p:first-child {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  padding-bottom: 4px;
+}
+
+tbody td p:last-child {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #c5c7cd;
+}
+
+tbody td.flex {
+  display: flex;
+  align-items: center;
+}
+
+tbody td.flex img {
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  margin-right: 10px;
+}
+
+tbody td button {
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+}
+
+tbody td button.high {
+  background-color: #f12b2c;
+}
+
+tbody td button.low {
+  background-color: #fec400;
+}
+
+tbody td button.normal {
+  background-color: #29cc97;
+}
+
+tbody td i {
+  color: #c5c7cd;
+  cursor: pointer;
+}
+
+/* Table Footer */
+
+tfoot td p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #9fa2b4;
+}
+
+tfoot td p span {
+  color: #4b506d;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+tfoot td:last-child {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+tfoot td:last-child p {
+  margin-right: auto;
+}
+
+tfoot td:last-child i {
+  margin-left: 1rem;
+  color: #c5c7cd;
+}

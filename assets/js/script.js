@@ -1,5 +1,6 @@
 class Dashboard {
   
+  // Set Height of main::after to Height of Dashboard
   static setAfterHeight () {
     const dashboardHeight = document.querySelector('.main').scrollHeight;
   
@@ -17,6 +18,7 @@ class Dashboard {
     }
   }
 
+  // SideMenu Toggle Bar
   static sideMenuToggle () {
     const navBars = document.querySelector('.main header .bars');
 

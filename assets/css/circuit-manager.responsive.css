@@ -1,0 +1,53 @@
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  table {
+    min-width: 900px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 500px) {
+  .table-title {
+    flex-wrap: wrap;
+  }
+
+  .table-title div {
+    margin-left: 0;
+    padding-top: 10px;
+  }
+
+  .table-title button {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .table-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table-title p {
+    margin-right: 0;
+  }
+
+  .table-title button {
+    margin-left: 0;
+  }
+}

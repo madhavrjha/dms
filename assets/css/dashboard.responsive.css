@@ -1,0 +1,68 @@
+@media (max-width: 1200px) {
+  /* Cards */
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .cards-container .card {
+    padding: 1rem;
+  }
+
+  /* Performance */
+
+  .performance {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .performance .graph-container {
+    height: 600px;
+  }
+
+  .performance .statistics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    order: -1;
+  }
+
+  .performance .statistics-container .box:last-child {
+    border-bottom: 1px solid #dfe0eb;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-container {
+    margin: 1rem 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    margin: 2rem 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  /* Cards */
+
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Performance */
+
+  .performance .statistics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  /* Performance */
+
+  .performance .statistics-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
