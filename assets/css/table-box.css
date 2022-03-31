@@ -1,7 +1,6 @@
 .table-box {
   margin: 1rem 0;
   width: 100%;
-  min-height: 400px;
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #dfe0eb;
@@ -91,6 +90,13 @@ td {
   border-bottom: 1px solid #dfe0eb;
 }
 
+td p {
+  max-width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 tbody tr:hover {
   background-color: #3752ff07;
 }
@@ -103,7 +109,7 @@ tbody td p:first-child {
   padding-bottom: 4px;
 }
 
-tbody td p:last-child {
+tbody td p:nth-child(2) {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -135,15 +141,15 @@ tbody td button {
   border-radius: 1rem;
 }
 
-tbody td button.high {
+tbody td button.red {
   background-color: #f12b2c;
 }
 
-tbody td button.low {
+tbody td button.yellow {
   background-color: #fec400;
 }
 
-tbody td button.normal {
+tbody td button.green {
   background-color: #29cc97;
 }
 

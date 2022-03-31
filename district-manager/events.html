@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - District Manager</title>
+  <title>Events - District Manager</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -32,10 +32,10 @@
       <nav class="top-nav">
         <ul>
           <li><a href="./dashboard.html"><i class="fa-solid fa-chart-pie"></i> <span>Dashboard</span></a></li>
-          <li class="active"><a href="#"><i class="fa-solid fa-user-tie"></i> <span>Circuit Managers</span></a>
+          <li><a href="./circuit-manager.html"><i class="fa-solid fa-user-tie"></i> <span>Circuit Managers</span></a>
           </li>
           <li><a href="./news.html"><i class="fa-solid fa-newspaper"></i> <span>News</span></a></li>
-          <li><a href="./events.html"><i class="fa-solid fa-calendar-days"></i> <span>Events</span></a></li>
+          <li class="active"><a href="#"><i class="fa-solid fa-calendar-days"></i> <span>Events</span></a></li>
           <li><a href="./schools.html"><i class="fa-solid fa-school"></i> <span>Schools</span></a></li>
           <li><a href="./bulk-sms.html"><i class="fa-solid fa-comment-sms"></i> <span>Bulk SMS/Mail</span></a></li>
         </ul>
@@ -51,7 +51,7 @@
     <main class="main">
       <header>
         <span class="bars"><i class="fa-solid fa-bars"></i></span>
-        <p class="page-location">Circuit Managers</p>
+        <p class="page-location">Events</p>
         <img class="logo" src="../assets/images/sms-logo.png" alt="sms-logo">
         <div class="profile-section">
           <span><i class="fa-solid fa-bell"></i></span>
@@ -65,8 +65,8 @@
       <div class="table-box">
 
         <div class="table-title">
-          <p>All Circuit Managers</p>
-          <button><i class="fa-solid fa-user-plus"></i> Add</button>
+          <p>All Events</p>
+          <button><i class="fa-solid fa-calendar-plus"></i> Create</button>
           <div>
             <span class="sort"><i class="fa-solid fa-arrow-down-wide-short"></i> Sort</span>
             <span class="filter"><i class="fa-solid fa-filter"></i> Filter</span>
@@ -78,74 +78,118 @@
 
             <thead>
               <tr>
-                <th>ID & Last Active</th>
-                <th>Name & Contact</th>
-                <th>Circuit Details</th>
-                <th>Performance</th>
+                <th>Sr. No.</th>
+                <th>Title & Description</th>
+                <th>Date</th>
+                <th>Participants</th>
+                <th>Status</th>
                 <th></th>
               </tr>
             </thead>
 
             <tbody>
+
               <tr>
                 <td>
-                  <p>C_MANAGER_164825024667</p>
-                  <p>6:30 PM</p>
-                </td>
-                <td class="flex">
-                  <img src="../assets/images/user.png" alt="avatar">
-                  <div>
-                    <p>Shoun Pollock</p>
-                    <p>+27 893756334, johndoe@gmail.com</p>
-                  </div>
+                  <p>1</p>
                 </td>
                 <td>
-                  <p>North Circuit, Soweto</p>
-                  <p>Joined on 24.05.2019</p>
+                  <p>Seminar - Financial Awareness</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adi...</p>
                 </td>
-                <td><button class="red">High</button></td>
+                <td>
+                  <p>on 25th Mar 2022, 11:20 AM</p>
+                  <p>4 hours</p>
+                </td>
+                <td>
+                  <p>40 Schools</p>
+                  <p>Mveledzandivo, Hitekani, Kutama...</p>
+                </td>
+                <td><button class="green">Upcoming</button></td>
                 <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
               </tr>
 
               <tr>
                 <td>
-                  <p>C_MANAGER_164825024667</p>
-                  <p>6:30 PM</p>
-                </td>
-                <td class="flex">
-                  <img src="../assets/images/user.png" alt="avatar">
-                  <div>
-                    <p>Peter Drunker</p>
-                    <p>+27 893756334, johndoe@gmail.com</p>
-                  </div>
+                  <p>2</p>
                 </td>
                 <td>
-                  <p>North Circuit, Soweto</p>
-                  <p>Joined on 24.05.2019</p>
+                  <p>Seminar - Why Outdoor Gaming is Imp...</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adi...</p>
                 </td>
-                <td><button class="green">Normal</button></td>
+                <td>
+                  <p>on 22th Mar 2022, 12:30 PM</p>
+                  <p>3 hours</p>
+                </td>
+                <td>
+                  <p>40 Schools</p>
+                  <p>Mveledzandivo, Hitekani, Kutama...</p>
+                </td>
+                <td><button class="green">Upcoming</button></td>
                 <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
               </tr>
 
               <tr>
                 <td>
-                  <p>C_MANAGER_164825024667</p>
-                  <p>6:30 PM</p>
-                </td>
-                <td class="flex">
-                  <img src="../assets/images/user.png" alt="avatar">
-                  <div>
-                    <p>Spensor Johnson</p>
-                    <p>+27 893756334, johndoe@gmail.com</p>
-                  </div>
+                  <p>3</p>
                 </td>
                 <td>
-                  <p>North Circuit, Soweto</p>
-                  <p>Joined on 24.05.2019</p>
+                  <p>Seminar - Social Anxiety</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adi...</p>
                 </td>
-                <td><button class="yellow">Low</button></td>
+                <td>
+                  <p>on 18th Mar 2022, 01:40 PM</p>
+                  <p>5 hours</p>
+                </td>
+                <td>
+                  <p>40 Schools</p>
+                  <p>Mveledzandivo, Hitekani, Kutama...</p>
+                </td>
+                <td><button class="red">Ongoing</button></td>
                 <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
               </tr>
+
+              <tr>
+                <td>
+                  <p>4</p>
+                </td>
+                <td>
+                  <p>Competition - Cultural Dance Event</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adi...</p>
+                </td>
+                <td>
+                  <p>on 13th March 2022</p>
+                  <p>5 Days</p>
+                </td>
+                <td>
+                  <p>40 Schools</p>
+                  <p>Mveledzandivo, Hitekani, Kutama...</p>
+                </td>
+                <td><button class="yellow">Closed</button></td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>5</p>
+                </td>
+                <td>
+                  <p>Workshop - Sing with Sarkodie</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adi...</p>
+                </td>
+                <td>
+                  <p>on 13th March 2022</p>
+                  <p>15 Days</p>
+                </td>
+                <td>
+                  <p>40 Schools</p>
+                  <p>Mveledzandivo, Hitekani, Kutama...</p>
+                </td>
+                <td><button class="yellow">Closed</button></td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+
 
             </tbody>
 
@@ -153,11 +197,12 @@
               <tr>
                 <td></td>
                 <td></td>
+                <td></td>
                 <td>
                   <p>Rows per page: <span>3</span> <i class="fa-solid fa-caret-down"></i></p>
                 </td>
-                <td colspan="2">
-                  <p>1-3 of 15</p>
+                <td>
+                  <p>1-5 of 15</p>
                   <i class="fa-solid fa-chevron-left"></i> <i class="fa-solid fa-chevron-right"></i>
                 </td>
               </tr>
