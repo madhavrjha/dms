@@ -62,6 +62,27 @@
   color: #e5e5e5;
 }
 
+/* Table Container */
+
+.table-container::-webkit-scrollbar {
+  width: 20px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
 /* Table */
 
 table {
@@ -84,6 +105,10 @@ table th {
 }
 
 /* Table Body */
+
+tbody tr {
+  cursor: pointer;
+}
 
 td {
   padding: 1.3rem 1rem;
@@ -153,6 +178,10 @@ tbody td button.green {
   background-color: #29cc97;
 }
 
+tbody td:last-child {
+  cursor: pointer;
+}
+
 tbody td i {
   color: #c5c7cd;
   cursor: pointer;
@@ -187,4 +216,54 @@ tfoot td:last-child p {
 tfoot td:last-child i {
   margin-left: 1rem;
   color: #c5c7cd;
+}
+
+
+/* Dropdown Option [Update & Delete] */
+
+td {
+  position: relative;
+}
+
+td:hover:last-child > .dropdown-option {
+  display: block;
+}
+
+td .dropdown-option {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 120px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #dfe0eb;
+  right: 2.7rem;
+  top: 2rem;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+
+td .dropdown-option span {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .4px;
+  color: #252733;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid #dfe0eb;
+}
+
+td .dropdown-option span:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+td .dropdown-option span:hover {
+  background-color: rgba(0 0 0 / 2%);
+  cursor: pointer;
+}
+
+td .dropdown-option span i {
+  min-width: 20px;
+  color: #252733;
 }

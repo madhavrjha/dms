@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../assets/css/style.responsive.css">
   <link rel="stylesheet" href="../assets/css/table-box.css">
   <link rel="stylesheet" href="../assets/css/table-box.responsive.css">
+  <link rel="stylesheet" href="../assets/css/modal.css">
+  <link rel="stylesheet" href="../assets/css/modal-responsive.css">
 
   <script src="../assets/js/script.js" defer></script>
 </head>
@@ -104,7 +106,14 @@
                   <p>Joined on 24.05.2019</p>
                 </td>
                 <td><button class="red">High</button></td>
-                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                <td>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdown-option">
+                    <span><i class="fa-solid fa-eye"></i> View</span>
+                    <span><i class="fa-solid fa-pen"></i> Edit</span>
+                    <span><i class="fa-solid fa-trash-can"></i> Remove</span>
+                  </div>
+                </td>
               </tr>
 
               <tr>
@@ -124,7 +133,14 @@
                   <p>Joined on 24.05.2019</p>
                 </td>
                 <td><button class="green">Normal</button></td>
-                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                <td>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdown-option">
+                    <span><i class="fa-solid fa-eye"></i> View</span>
+                    <span><i class="fa-solid fa-pen"></i> Edit</span>
+                    <span><i class="fa-solid fa-trash-can"></i> Remove</span>
+                  </div>
+                </td>
               </tr>
 
               <tr>
@@ -144,7 +160,14 @@
                   <p>Joined on 24.05.2019</p>
                 </td>
                 <td><button class="yellow">Low</button></td>
-                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                <td>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="dropdown-option">
+                    <span><i class="fa-solid fa-eye"></i> View</span>
+                    <span><i class="fa-solid fa-pen"></i> Edit</span>
+                    <span><i class="fa-solid fa-trash-can"></i> Remove</span>
+                  </div>
+                </td>
               </tr>
 
             </tbody>
@@ -174,6 +197,18 @@
 
     </main>
 
+  </div>
+
+  <div class="modal-container show">
+    <div class="modal">
+      <i class="fa-solid fa-xmark fa-2x"></i>
+      <h1>Delete Circuit Manager</h1>
+      <p>are you sure to remove the circuit manager?</p>
+      <div class="flex">
+        <button class="cancel"><i class="fa-solid fa-ban"></i> Cancel</button>
+        <button class="delete"><i class="fa-solid fa-trash-can"></i> Delete</button>
+      </div>
+    </div>
   </div>
 
 </body>
