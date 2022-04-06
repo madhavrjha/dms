@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/css/modal-responsive.css">
 
   <script src="../assets/js/script.js" defer></script>
+  <script src="../assets/js/modal.js" defer></script>
 </head>
 
 <body>
@@ -111,7 +112,7 @@
                   <div class="dropdown-option">
                     <span><i class="fa-solid fa-eye"></i> View</span>
                     <span><i class="fa-solid fa-pen"></i> Edit</span>
-                    <span><i class="fa-solid fa-trash-can"></i> Remove</span>
+                    <span class="remove-btn"><i class="fa-solid fa-trash-can"></i> Remove</span>
                   </div>
                 </td>
               </tr>
@@ -138,7 +139,7 @@
                   <div class="dropdown-option">
                     <span><i class="fa-solid fa-eye"></i> View</span>
                     <span><i class="fa-solid fa-pen"></i> Edit</span>
-                    <span><i class="fa-solid fa-trash-can"></i> Remove</span>
+                    <span class="remove-btn"><i class="fa-solid fa-trash-can"></i> Remove</span>
                   </div>
                 </td>
               </tr>
@@ -165,7 +166,7 @@
                   <div class="dropdown-option">
                     <span><i class="fa-solid fa-eye"></i> View</span>
                     <span><i class="fa-solid fa-pen"></i> Edit</span>
-                    <span><i class="fa-solid fa-trash-can"></i> Remove</span>
+                    <span class="remove-btn"><i class="fa-solid fa-trash-can"></i> Remove</span>
                   </div>
                 </td>
               </tr>
@@ -179,7 +180,7 @@
                 <td>
                   <p>Rows per page: <span>3</span> <i class="fa-solid fa-caret-down"></i></p>
                 </td>
-                <td colspan="2">
+                <td>
                   <p>1-3 of 15</p>
                   <i class="fa-solid fa-chevron-left"></i> <i class="fa-solid fa-chevron-right"></i>
                 </td>
@@ -199,15 +200,22 @@
 
   </div>
 
-  <div class="modal-container show">
+  <div class="modal-container remove-circuit-manager">
     <div class="modal">
-      <i class="fa-solid fa-xmark fa-2x"></i>
-      <h1>Delete Circuit Manager</h1>
+      <i class="fa-solid fa-xmark fa-2x close"></i>
+      <h1>Remove Circuit Manager</h1>
       <p>are you sure to remove the circuit manager?</p>
       <div class="flex">
         <button class="cancel"><i class="fa-solid fa-ban"></i> Cancel</button>
-        <button class="delete"><i class="fa-solid fa-trash-can"></i> Delete</button>
+        <button class="delete"><i class="fa-solid fa-trash-can"></i> Remove</button>
       </div>
+    </div>
+  </div>
+
+  <div class="modal-container add-circuit-manager">
+    <div class="modal">
+      <i class="fa-solid fa-xmark fa-2x close"></i>
+      <h1>Add Circuit Manager</h1>
     </div>
   </div>
 

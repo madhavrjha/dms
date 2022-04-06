@@ -189,6 +189,10 @@ tbody td i {
 
 /* Table Footer */
 
+tfoot td {
+  border-bottom: 1px solid transparent;
+}
+
 tfoot td p {
   font-weight: 400;
   font-size: 14px;
@@ -223,6 +227,7 @@ tfoot td:last-child i {
 
 td {
   position: relative;
+  z-index: inherit;
 }
 
 td:hover:last-child > .dropdown-option {
@@ -236,8 +241,8 @@ td .dropdown-option {
   width: 120px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: 1px solid #dfe0eb;
-  right: 2.7rem;
-  top: 2rem;
+  right: 50%;
+  top: 50%;
   z-index: 1;
   border-radius: 4px;
 }

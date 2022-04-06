@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+
+  .modal {
+    width: 350px;
+    min-width: 0;
+  }
+
+  .modal > i {
+    font-size: 1rem;
+  }
+}
